@@ -1,2 +1,6 @@
 .DS_store
 .idea
+/_site
+config.yml
+Gemfile
+Gemfile.lock

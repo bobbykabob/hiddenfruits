@@ -8,15 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hidden Fruit: A Multimodal Detection Framework</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -50,48 +47,34 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of California, Los Angeles</span>
           </div>
-
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="./static/paper.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                <a href="./static/paper.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/hiddenfruits/hiddenfruit"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                <a href="https://github.com/bobbykabob/hiddenfruits" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://drive.google.com/drive/folders/13hrWIYdVbaK2wheflVVYYb3EWHIBmFyq?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-database"></i>
-                  </span>
+                <a href="https://drive.google.com/drive/u/1/folders/13hrWIYdVbaK2wheflVVYYb3EWHIBmFyq" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
                   <span>Dataset</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1JYhIJxV8ZHEoNyViIQazzdbR3Bmm2-Bm/view?usp=sharing"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
+                <a href="https://youtu.be/MrKrnHhk8IA" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-youtube"></i></span>
                   <span>Video</span>
                 </a>
               </span>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -102,8 +85,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
+        <source src="./static/videos/teaser.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         <span class="dnerf">Hidden Fruit</span> uses synchronized RGB, thermal, and depth imaging to detect fruit in challenging outdoor conditions.
@@ -118,23 +100,220 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Modern agricultural practices increasingly rely on automation to address labor shortages and enhance operational efficiency. However, accurately detecting fruits in real-world environments remains challenging due to variable lighting, occlusions, and complex backgrounds.
-          </p>
-          <p>
-            This paper introduces <strong>Hidden Fruit</strong>, a portable, multimodal detection framework. First, we present a large-scale dataset containing RGB, depth, NIR, and thermal imagery along with pose information. Then, we detail our compact, Jetson-powered handheld platform designed for data collection and in-field fruit detection.
-          </p>
-          <p>
-            Our approach synchronizes multiple sensing modalities and applies offline calibration to align heterogeneous data sources. Experimental results show improved detection performance under difficult conditions such as occlusion, clutter, and night settings.
-          </p>
-          <p>
-            Hidden Fruit contributes an open dataset and methodology to support future research in agricultural automation, multimodal fusion, and object detection.
-          </p>
+          <p>Modern agricultural practices increasingly rely on automation to address labor shortages and enhance operational efficiency. However, accurately detecting fruits in real-world environments remains challenging due to variable lighting, occlusions, and complex backgrounds.</p>
+          <p>This paper introduces <strong>Hidden Fruit</strong>, a portable, multimodal detection framework. First, we present a large-scale dataset containing RGB, depth, NIR, and thermal imagery along with pose information. Then, we detail our compact, Jetson-powered handheld platform designed for data collection and in-field fruit detection.</p>
+          <p>Our approach synchronizes multiple sensing modalities and applies offline calibration to align heterogeneous data sources. Experimental results show improved detection performance under difficult conditions such as occlusion, clutter, and night settings.</p>
+          <p>Hidden Fruit contributes an open dataset and methodology to support future research in agricultural automation, multimodal fusion, and object detection.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+  <!-- ▒▒▒ Two independent before/after sliders ▒▒▒ -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered is-gapless">
+
+      <!-- LEFT SLIDER uses digital.jpeg / thermal.jpeg -->
+      <div class="column has-text-centered">
+        <div class="slider-box">
+          <img src="./static/images/digital.jpeg"  alt="Digital">
+          <div class="slider-overlay">
+            <img src="./static/images/thermal.jpeg" alt="Thermal">
+          </div>
+          <div class="slider-handle"></div>
+        </div>
+        <p class="is-size-6 mt-2">Digital ↔ Thermal</p>
+      </div>
+
+      <!-- RIGHT SLIDER uses digital_2.jpeg / thermal_2.jpeg -->
+      <div class="column has-text-centered">
+        <div class="slider-box">
+          <img src="./static/images/digital_2.jpeg"  alt="Alt Angle: Digital ">
+          <div class="slider-overlay">
+            <img src="./static/images/thermal_2.jpeg" alt="Alt Angle: Thermal ">
+          </div>
+          <div class="slider-handle"></div>
+        </div>
+        <p class="is-size-6 mt-2">Digital (180°) ↔ Thermal (180°)</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+/* shared slider styling */
+.slider-box{
+  position:relative;
+  width:100%;           /* fills Bulma column */
+  max-width:300px;
+  aspect-ratio:5/8;
+  margin:0 auto;
+  overflow:hidden;
+  cursor:ew-resize;
+  user-select:none;
+}
+.slider-box img{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  pointer-events:none; user-select:none; -webkit-user-drag:none;
+}
+.slider-overlay{
+  position:absolute; inset:0;
+  clip-path:inset(0 50% 0 0); -webkit-clip-path:inset(0 50% 0 0);
+}
+.slider-handle{
+  position:absolute; top:0; left:50%; translate:-50% 0;
+  width:4px; height:100%;
+  background:#fff; border-left:2px solid #000;
+  pointer-events:none; z-index:10;
+}
+</style>
+
+<script>
+/* enable every .slider-box found on the page */
+document.querySelectorAll('.slider-box').forEach(box=>{
+  const overlay = box.querySelector('.slider-overlay');
+  const handle  = box.querySelector('.slider-handle');
+
+  const setPos = x=>{
+    const r=box.getBoundingClientRect();
+    const pct=Math.max(0,Math.min(x-r.left,r.width))/r.width*100;
+    overlay.style.clipPath =
+    overlay.style.webkitClipPath=`inset(0 ${100-pct}% 0 0)`;
+    handle.style.left=pct+'%';
+  };
+
+  const start=e=>{
+    setPos(e.clientX??e.touches[0].clientX);
+    const move = ev=>setPos(ev.clientX??ev.touches[0].clientX);
+    const stop = ()=>window.removeEventListener('pointermove',move);
+    window.addEventListener('pointermove',move);
+    window.addEventListener('pointerup',stop,{once:true});
+  };
+
+  box.addEventListener('pointerdown',start);
+});
+</script>
+
+</section>
+  
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">1. Problem Statement</h2>
+    <p>
+      Thermal cameras are widely used for their robustness in harsh conditions and ability to capture temperature-related information. This has led to many thermal datasets. MultiSpectralMotion provides indoor and outdoor thermal images with ground-truth depth from handheld devices. 
+      <br> ViViD++ offers outdoor imagery from vehicle-mounted and handheld platforms. SubT-MRS covers varied platforms under degraded conditions but lacks wildland forest imagery.
+      Stereo datasets like STheReO, MS2, and FIReStereo mainly focus on urban driving. MS2 includes rain scenes but retains typical driving constraints. FIReStereo supports depth estimation for small UAS in degraded environments.
+iscus
+    </p>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div style="margin-left: 15%;">
+        <figure class="image" style="max-width: 75%;">
+          <img src="./static/images/device.png" 
+               alt="Comparison of RGB, NIR, and Thermal Fusion"
+               style="height: auto;">
+        </figure>
+        <p style="margin-left: 20%; text-align: left; width: max-content;">
+Overview of the system and the computer vision pipeline.
+</p>
+      
+      </div>
+    </div>
+  </div>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">2. System Design / Methodology</h2>
+    <p>Hidden Fruit is a portable data-capture rig that synchronously collects RGB, NIR, LWIR, and depth imagery along with 6-DoF pose. Built around the Jetson Orin Nano, the system ensures synchronized capture, sensor calibration using thermal and NIR checkerboards, and structured data storage.</p>
+  </div>
+    
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div style="margin-left: 15%;">
+        <figure class="image" style="max-width: 75%;">
+          <img src="./static/images/dataset2.png" 
+               alt="Platform Comparison"
+               style="height: auto;">
+        </figure>
+<p style="margin-left: 25%; text-align: left; width: max-content;">
+  Platform evolution and field integration
+</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">3. Evaluation & Dataset</h2>
+    <p>
+      Our platform evolved from an acrylic-mounted prototype using FLIR and RealSense cameras to a tightly integrated handheld system. 
+      Benchmarks across datasets show our method performs well under challenging lighting and occlusion scenarios, particularly in night-time and foliage-heavy settings.
+    </p>
+    <p>
+      We present the <strong>HiddenHeatedFruit</strong> dataset, which contains synchronized RGB, thermal, NIR, and depth imagery along with pose metadata. 
+      Offline calibration and timestamp alignment ensure accurate multimodal fusion. 
+      Annotations are semi-automated using custom tools to support 3D fruit localization.
+    </p>
+  </div>
+<div class="columns is-centered">
+    <div class="column is-8">
+      <div style="margin-left: 15%;">
+        <figure class="image" style="max-width: 75%;">
+          <img src="./static/images/compare-fusion.png" 
+               alt="Comparison of RGB, NIR, and Thermal Fusion"
+               style="height: auto;">
+        </figure>
+        <p style="margin-left: 25%; text-align: left; width: max-content;">
+Comparison of RGB, NIR, and Thermal Fusion
+</p>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-4">4. Discussion & Contributions</h2>
+    <p>
+      The Hidden Fruit system has applications beyond agriculture, including search-and-rescue, surveillance, and industrial automation. 
+      Our fusion techniques enhance object localization and robustness, especially in cluttered or degraded environments, offering broad potential for sustainable, automated systems.
+    </p>
+    <p>
+      Special thanks to Postdoc Andy (Tuan-Anh) Vu for mentorship, Professor Jawed Khalid for lab support, and Professor Yuchen Cui for additional CS guidance. 
+      Harris Song was the sole contributor—building the dataset, codebase, experiments, paper, video, and this website.
+    </p>
+  </div>
+<div class="columns is-centered">
+    <div class="column is-8">
+      <div style="margin-left: 15%;">
+        <figure class="image" style="max-width: 75%;">
+          <img src="./static/images/table.png" 
+               alt="Dataset Overview Table"
+               style="height: auto;">
+        </figure>
+        <p style="margin-left: 25%; text-align: left; width: max-content;">
+Overview of the HiddenHeatedFruit dataset
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
@@ -169,13 +348,12 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            Source code available at <a href="https://github.com/hiddenfruits/hiddenfruit">hiddenfruits/hiddenfruit</a>.
+            Source code available at <a href="https://github.com/bobbykabob/hiddenfruits">bobbykabob/hiddenfruit</a>.
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
 </body>
 </html>
